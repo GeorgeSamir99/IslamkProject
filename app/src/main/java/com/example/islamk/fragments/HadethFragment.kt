@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.islamk.databinding.FregmentHadethBinding
-import com.example.islamk.databinding.FregmentQuranBinding
 
-class FragmentHadeth : Fragment() {
+class HadethFragment : Fragment() {
     lateinit var binding : FregmentHadethBinding
     override fun onCreateView(
         inflater: LayoutInflater,
