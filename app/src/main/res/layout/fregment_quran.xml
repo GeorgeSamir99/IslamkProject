@@ -2,6 +2,44 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@drawable/quran_image">
 
+    <ImageView
+        android:id="@+id/islamk_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/islami_quran_logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHeight_percent=".18"
+        />
+
+    <TextView
+        android:id="@+id/suras_list_txt_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/islamk_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/suras_list"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_margin="16dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chapters_list_recyview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/suras_list_txt_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:listitem="@layout/item_chapter"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>

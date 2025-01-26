@@ -1,20 +1,20 @@
-package com.example.islamk.fragments
+package com.example.islamk.home.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.islamk.databinding.FregmentTasbeehBinding
+import com.example.islamk.databinding.FregmentRadioBinding
 
-class TasbeehFragment : Fragment() {
-    lateinit var binding: FregmentTasbeehBinding
+class RadioFragment : Fragment() {
+    lateinit var binding: FregmentRadioBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FregmentTasbeehBinding.inflate(inflater,container,false)
+        binding = FregmentRadioBinding.inflate(inflater,container,false)
         return binding.root
     }
 

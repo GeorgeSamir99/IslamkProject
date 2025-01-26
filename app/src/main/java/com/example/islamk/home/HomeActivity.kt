@@ -11,10 +11,10 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.example.islamk.R
 import com.example.islamk.databinding.ActivityHomeBinding
-import com.example.islamk.fragments.HadethFragment
-import com.example.islamk.fragments.QuranFragment
-import com.example.islamk.fragments.RadioFragment
-import com.example.islamk.fragments.TasbeehFragment
+import com.example.islamk.home.fragments.HadethFragment
+import com.example.islamk.home.fragments.QuranFragment
+import com.example.islamk.home.fragments.RadioFragment
+import com.example.islamk.home.fragments.TasbeehFragment
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding
