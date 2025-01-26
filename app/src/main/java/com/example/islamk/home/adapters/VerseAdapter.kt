@@ -12,7 +12,7 @@ class VerseAdapter (val versesList : List<String>): Adapter<VerseAdapter.VerseVi
     class VerseViewHolder(val binding : ItemVerseBinding):ViewHolder(binding.root){
 
         fun binding(verse : String, position : Int){
-            binding.verseTextView.text="[${position +1} $verse]"
+            binding.verseTextView.text="[ ${position +1} ] $verse"
         }
 
 

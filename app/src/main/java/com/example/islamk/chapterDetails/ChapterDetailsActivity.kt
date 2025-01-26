@@ -29,6 +29,9 @@ class ChapterDetailsActivity : AppCompatActivity() {
         }
         receiveParams()
         initRecyclerView()
+        binding.backIcon.setOnClickListener {
+            finish()
+        }
     }
 
     private fun initRecyclerView() {
@@ -48,6 +51,8 @@ class ChapterDetailsActivity : AppCompatActivity() {
         }else{
             intent.getParcelableExtra(AppConstants.CHAPTER_KEY)
         }
+        binding.chapterTitleArTextView.text = chapter?.titleAr
+        binding.chapterTitleEnTextView.text = chapter?.titleEn
     }
 }
 
